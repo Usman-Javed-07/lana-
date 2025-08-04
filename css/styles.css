@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
   background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 body::before {
@@ -202,6 +202,7 @@ nav a:hover {
     position: relative;
     border: none;
     background-color:  #f2f5f9b0;
+    font-size: 18px;
 }
 .input:focus {
     outline: none;
@@ -222,4 +223,63 @@ margin-top: 20px;
 }
 .input-img {
     margin-top: 60px;
+}
+.drinks-section {
+    margin-top: 1rem;
+    padding: 0px 60px;
+}
+.drinks-container {
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.drink-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.drink-links .drinks-heading {
+  margin-right: auto;
+}
+
+.drink-links .drinks-links-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.drinks-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #666;
+}
+.drinks-heading img {
+    height: 30px;
+}
+.drinks-links-list {
+    padding: 2px;
+    border: 1px solid #9999994a;
+    border-radius: 50px;
+    background-color: #FAFAFA;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 30px;
+}
+.drinks-links-list a {
+    text-decoration: none;
+    color: #000000b6;
+}
+.active-link {
+    padding: 11px 30px;
+    background-color: #ff6700;
+    color: #fff !important;
+    border-radius: 40px;
 }
