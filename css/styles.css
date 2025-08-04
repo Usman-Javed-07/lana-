@@ -1,3 +1,8 @@
+
+:root {
+  --primary-gradient: linear-gradient(90deg, #F49062, #FD371F);
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -94,7 +99,21 @@ nav a:hover {
     padding:5px 12px;
     border-radius: 50px;
     text-align: center;
-
+}
+.meet-lana {
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 10px;
+}
+.cart-img {
+    height: 23px;
+    margin-right: 10px;
+}
+.cart-section {
+    display: flex;
+    align-items: center;
+     justify-content: center;
 }
 
 @media (max-width: 768px) {
