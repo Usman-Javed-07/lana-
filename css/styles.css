@@ -181,3 +181,10 @@ nav a:hover {
     align-items: center;
   }
 }
+
+.main-heading {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 48px;
+    
+}
