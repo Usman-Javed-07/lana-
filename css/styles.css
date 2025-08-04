@@ -188,3 +188,38 @@ nav a:hover {
     font-size: 48px;
     
 }
+.header-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.input {
+    padding: 15px 20px;
+    width: 50%;
+    border-radius: 50px;
+      z-index: 10; 
+    position: relative;
+    border: none;
+    background-color:  #f2f5f9b0;
+}
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.046);
+}
+::placeholder {
+    color: #000;
+    font-size: 18px;
+}
+.input-img1 {
+margin-top: 50px;
+}
+.input-img2 {
+margin-top: 40px;
+}
+.input-img3 {
+margin-top: 20px;
+}
+.input-img {
+    margin-top: 60px;
+}
