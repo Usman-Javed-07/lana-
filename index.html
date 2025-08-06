@@ -2,71 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sharp Grid Background</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharp Grid Background</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
+  <header class="header">
+    <div class="header-section">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.svg" alt="Lana Logo" /></a>
+      </div>
 
-    <header class="header">
-        <div class="header-section">
-            <div class="logo">
-                <a href="#"><img src="./images/logo.svg" alt="Logo"></a>
-            </div>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
 
-            <button class="menu-toggle" aria-label="Toggle Menu">
-                ☰
-            </button>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Explore Drinks</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li>
+            <a href="#">Bring a Friend</a>
+            <span class="bring-price">$5</span>
+          </li>
+          <li><a class="meet-lana" href="#">MEET LANA</a></li>
+          <li class="cart-section">
+            <img class="cart-img" src="./images/Icon.png" alt="Cart Icon" />
+            <a href="#">BAG (0)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Explore Drinks</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li>
-                        <a href="#">Bring a Friend</a>
-                        <span class="bring-price">$5</span>
-                    </li>
-                    <li><a class="meet-lana" href="#">MEET LANA</a></li>
-                    <li class="cart-section">
-                        <img class="cart-img" src="./images/Icon.png" alt="cart">
-                        <a href="#">BAG (0)</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <h1 class="main-heading">Meet Lana: The World’s First AI-Driven <br>
-        <span style="color: #ff6a4d;">Non-Alcoholic</span> Social Club & <br> Marketplace
+  <main>
+    <h1 class="main-heading">
+      Meet Lana: The World’s First AI-Driven <br />
+      <span class="highlight-text">Non-Alcoholic</span> Social Club & <br />
+      Marketplace
     </h1>
-    <div class="header-input">
-        <img class="input-img" src="./images/logo.svg" alt="input image">
-        <img class="input-img1" src="./images/Ellipse 93.png" alt="input image">
-        <img class="input-img2" src="./images/Ellipse 92.png" alt="input image">
-        <img class="input-img3" src="./images/Ellipse 91.png" alt="input image">
 
-        <input class="input" type="search" placeholder="Hey," />
+    <div class="header-input">
+      <img class="input-img" src="./images/logo.svg" alt="Lana Icon" />
+      <img class="input-img1" src="./images/Ellipse 93.png" alt="Bubble Icon" />
+      <img class="input-img2" src="./images/Ellipse 92.png" alt="Bubble Shadow" />
+      <img class="input-img3" src="./images/Ellipse 91.png" alt="Bubble Light" />
+      <input class="input" type="search" placeholder="Hey," />
     </div>
-    <div class="drinks-section">
-         <div class="drinks-container">
-            <div class="drink-links">
-                <div class="drinks-heading">
-                 <img src="./images/card-heading.png" alt="drinks logo">
-                  <p>What are you in the mood for?</p>
-                </div>
-                <div class="drinks-links-list">
-                    <a class="active-link" href="#">Drinks</a>
-                    <a href="#">Experiences</a>
-                </div>
-            </div>
-            <div class="drinks-card">
-            
-            </div>
-         </div>
-    </div>
-    <script src="./js/script.js"></script>
+
+    <section class="drinks-section">
+      <div class="drinks-container">
+        <div class="drink-links">
+          <div class="drinks-heading">
+            <img src="./images/card-heading.png" alt="Mood Icon" />
+            <p>What are you in the mood for?</p>
+          </div>
+          <div class="drinks-links-list">
+            <a class="active-link" href="#">Drinks</a>
+            <a href="#">Experiences</a>
+          </div>
+        </div>
+
+        <div class="drinks-card">
+          <div class="card">
+            <img src="./images/Artful Wine Bottle Display 1.png" alt="Beers" />
+            <p>Beers</p>
+          </div>
+          <div class="card card1">
+            <img src="./images/Elegant Wine Bottle (2) 1.png" alt="Wines" />
+            <p>Wines</p>
+          </div>
+          <div class="card card2">
+            <img src="./images/Refreshment in Pink Glow 1.png" alt="Ready to Drink" />
+            <p>Ready to Drink</p>
+          </div>
+          <div class="card card3">
+            <img src="./images/Artisanal Ceramic Jug 1.png" alt="Spirits" />
+            <p>Spirits</p>
+          </div>
+          <div class="card card4">
+            <img src="./images/Elegant Pink Cocktail in Martini Glass 1.png" alt="Mixers" />
+            <p>Mixers</p>
+          </div>
+          <div class="card card5">
+            <img src="./images/Sparkling Amber Beverage in Glass 1.png" alt="Functionals" />
+            <p>Functionals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

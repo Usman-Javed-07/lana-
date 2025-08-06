@@ -143,7 +143,7 @@ nav a:hover {
      justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .menu-toggle {
     display: block;
   }
@@ -188,6 +188,10 @@ nav a:hover {
     font-size: 48px;
     
 }
+.highlight-text {
+  color: #ff6a4d;
+}
+
 .header-input {
     display: flex;
     align-items: center;
@@ -225,19 +229,20 @@ margin-top: 20px;
     margin-top: 60px;
 }
 .drinks-section {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 0px 60px;
 }
 .drinks-container {
     background-color: #fff;
     position: relative;
     z-index: 10;
-    padding: 10px;
-    border-radius: 40px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .drink-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   position: relative;
@@ -252,6 +257,26 @@ margin-top: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Responsive behavior for screen widths less than or equal to 950px */
+@media (max-width: 950px) {
+  .drink-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .drink-links .drinks-links-list {
+    position: static;
+    transform: none;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .drink-links .drinks-heading {
+    margin: 0 0 10px 0;
+  }
+}
+
 
 .drinks-heading {
     display: flex;
@@ -282,4 +307,71 @@ margin-top: 20px;
     background-color: #ff6700;
     color: #fff !important;
     border-radius: 40px;
+}
+.drinks-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 110px;
+    gap: 10px;
+    background-color: #FFF0E6;
+    border-radius: 10px;
+    padding: 10px 50px 0px 20px;
+}
+.card p {
+    font-size: 20px;
+}
+.card img {
+    height: 110px;
+}
+.card1 {
+    background-color: #F4F8FE;
+
+}
+
+.card2 {
+    background-color: #F4F8FE;
+}
+
+.card3 {
+    background-color: #F8F3F2;
+}
+
+.card4 {
+    background-color: #FFE6EE;
+}
+
+.card5 {
+    background-color: #FFF0E6;
+}
+@media screen and (max-width:424px) {
+    .drinks-section  {
+          padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .card img {
+        height: 60px;
+    }
+    .card p {
+        font-size: 18px;
+    }
+    
 }
