@@ -545,7 +545,18 @@ margin-top: 60px;
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 10px;
+  margin-top: 0px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
+.star {
+    color: #FF8533; 
+}
+.drink-rating {
+    color: #000 !important;
+    font-weight: bold;
+}
+
 
 .rating span {
   color: #aaa;
