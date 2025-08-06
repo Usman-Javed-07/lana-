@@ -377,3 +377,38 @@ margin-top: 20px;
     }
     
 }
+.brands-section {
+    padding: 60px;
+}
+.brands-section h2 {
+    text-align: center;
+    font-size: 38px;
+    border-top: 1px solid #0000001e;
+    
+}
+.brands-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    border-bottom:1px solid #0000001e;
+    padding-bottom: 50px;
+    overflow-x: scroll;
+     scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+@media screen and (max-width: 500px) {
+  .brands-logo {
+    gap: 2rem;
+    justify-content: start;
+  }
+    
+}
+.brands-logo::-webkit-scrollbar {
+  display: none;
+}
+.brands-logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
