@@ -447,7 +447,7 @@ nav a:hover {
   background: white;
   border-radius: 10px;
   /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
-  width: calc(24% - 15px);
+  width: calc(24% - 3px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -865,4 +865,12 @@ nav a:hover {
     color: #fff;
     margin-left: 10px !important;
     z-index: 9999;
+}
+
+@media screen and (max-width: 420px) {
+  
+  .events-section {
+  padding: 0px 20px 60px 20px;
+  }
+    
 }
