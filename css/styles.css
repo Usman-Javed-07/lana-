@@ -412,3 +412,206 @@ margin-top: 20px;
     width: 70px;
     object-fit: contain;
 }
+
+
+
+
+.container {
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 60px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.explore-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.explore-card-heading h2 {
+  font-size: 2rem;
+}
+
+
+.explore-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.drink-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: calc(25% - 15px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.card-image {
+  height: 250px;
+  position: relative;
+  background-color: #b4003b;
+  overflow: hidden;
+}
+
+.card-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  pointer-events: none;
+}
+
+.card-image1{
+    width: 100%;
+     display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+.card-image1 img {
+  
+width: 190px;
+height: 190px;
+margin-top: 60px;
+}
+
+.badge.trending {
+  background: #ffffff21;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.rank img {
+    width: 40px;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  color: #aaa;
+}
+
+.bar-group {
+  margin-bottom: 10px;
+}
+
+.bar-label {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.bar {
+  background: #eee;
+  height: 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #d9a0ff;
+  border-radius: 4px;
+}
+
+.taste { width: 85%; }
+.health { width: 75%; background: #a0d9ff; }
+.value { width: 65%; background: #ffa0a0; }
+
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.add-btn {
+  background: #ff5722;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .drink-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .drink-card {
+    width: 100%;
+  }
+}
