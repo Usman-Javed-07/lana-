@@ -373,7 +373,7 @@ nav a:hover {
   }
 }
 .brands-section {
-  padding: 60px;
+  padding: 60px 60px 30px 60px;
 }
 .brands-section h2 {
   text-align: center;
@@ -409,7 +409,7 @@ nav a:hover {
 .container {
   /* max-width: 1200px; */
   margin: auto;
-  padding: 60px;
+  padding: 0px 60px 60px 60px;
   font-family: "Inter", sans-serif;
   color: #333;
 }
@@ -458,6 +458,15 @@ nav a:hover {
   position: relative;
   background-color: #b4003b;
   overflow: hidden;
+}
+.card-image-bg2 {
+   background-color: #f6c7a2; 
+}
+.card-image-bg3 {
+   background-color: #eb7b52; 
+}
+.card-image-bg4 {
+   background-color: #0268a6; 
 }
 
 .card-image::after {
@@ -662,5 +671,8 @@ nav a:hover {
   }
   .drink-card {
     width: 100%;
+  }
+  .container {
+    padding: 20px;
   }
 }
