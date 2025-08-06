@@ -1,6 +1,5 @@
-
 :root {
-  --primary-gradient: linear-gradient(90deg, #F49062, #FD371F);
+  --primary-gradient: linear-gradient(90deg, #f49062, #fd371f);
 }
 
 body {
@@ -8,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 .background-grid {
- background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
+  background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
   min-height: 100vh;
   /* overflow: hidden; */
   position: relative;
@@ -121,28 +120,28 @@ nav a:hover {
   color: #ffc0cb;
 }
 .bring-price {
-    font-size: 12px;
-    margin-left: 5px;
-    background-color: rgba(6, 136, 51, 0.735);
-    color: #fff;
-    padding:5px 12px;
-    border-radius: 50px;
-    text-align: center;
+  font-size: 12px;
+  margin-left: 5px;
+  background-color: rgba(6, 136, 51, 0.735);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+  text-align: center;
 }
 .meet-lana {
-    background: var(--primary-gradient);
-    color: #fff !important;
-    padding: 14px 18px;
-    border-radius: 10px;
+  background: var(--primary-gradient);
+  color: #fff !important;
+  padding: 14px 18px;
+  border-radius: 10px;
 }
 .cart-img {
-    height: 23px;
-    margin-right: 10px;
+  height: 23px;
+  margin-right: 10px;
 }
 .cart-section {
-    display: flex;
-    align-items: center;
-     justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 950px) {
@@ -158,8 +157,8 @@ nav a:hover {
     background: white;
     flex-direction: column;
     align-items: center;
-    border-radius:5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 0;
     max-height: 0;
     overflow: hidden;
@@ -170,7 +169,7 @@ nav a:hover {
 
   .navbar.show {
     padding: 20px 0;
-    max-height: 500px; 
+    max-height: 500px;
     opacity: 1;
     transform: translateY(0);
     margin-top: 5px;
@@ -185,61 +184,60 @@ nav a:hover {
 }
 
 .main-heading {
-    text-align: center;
-    margin-top: 4rem;
-    font-size: 48px;
-    
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 48px;
 }
 .highlight-text {
   color: #ff6a4d;
 }
 
 .header-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 .input {
-    padding: 15px 20px;
-    width: 50%;
-    border-radius: 50px;
-      z-index: 10; 
-    position: relative;
-    border: none;
-    background-color:  #f2f5f9b0;
-    font-size: 18px;
+  padding: 15px 20px;
+  width: 50%;
+  border-radius: 50px;
+  z-index: 10;
+  position: relative;
+  border: none;
+  background-color: #f2f5f9b0;
+  font-size: 18px;
 }
 .input:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.046);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.046);
 }
 ::placeholder {
-    color: #000;
-    font-size: 18px;
+  color: #000;
+  font-size: 18px;
 }
 .input-img1 {
-margin-top: 50px;
+  margin-top: 50px;
 }
 .input-img2 {
-margin-top: 40px;
+  margin-top: 40px;
 }
 .input-img3 {
-margin-top: 20px;
+  margin-top: 20px;
 }
 .input-img {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 .drinks-section {
-    margin-top: 1.5rem;
-    padding: 0px 60px;
+  margin-top: 1.5rem;
+  padding: 0px 60px;
 }
 .drinks-container {
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    padding: 20px;
-    border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .drink-links {
@@ -279,122 +277,118 @@ margin-top: 20px;
   }
 }
 
-
 .drinks-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #666;
 }
 .drinks-heading img {
-    height: 30px;
+  height: 30px;
 }
 .drinks-links-list {
-    padding: 2px;
-    border: 1px solid #9999994a;
-    border-radius: 50px;
-    background-color: #FAFAFA;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding-right: 30px;
+  padding: 2px;
+  border: 1px solid #9999994a;
+  border-radius: 50px;
+  background-color: #fafafa;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-right: 30px;
 }
 .drinks-links-list a {
-    text-decoration: none;
-    color: #000000b6;
+  text-decoration: none;
+  color: #000000b6;
 }
 .active-link {
-    padding: 11px 30px;
-    background-color: #ff6700;
-    color: #fff !important;
-    border-radius: 40px;
+  padding: 11px 30px;
+  background-color: #ff6700;
+  color: #fff !important;
+  border-radius: 40px;
 }
 .drinks-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .card {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     height: 110px;
-    gap: 10px;
-    background-color: #FFF0E6;
-    border-radius: 10px;
-    padding: 10px 50px 0px 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  gap: 10px;
+  background-color: #fff0e6;
+  border-radius: 10px;
+  padding: 10px 50px 0px 20px;
 }
 .card p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .card img {
-    height: 110px;
+  height: 110px;
 }
 .card1 {
-    background-color: #F4F8FE;
-
+  background-color: #f4f8fe;
 }
 
 .card2 {
-    background-color: #F4F8FE;
+  background-color: #f4f8fe;
 }
 
 .card3 {
-    background-color: #F8F3F2;
+  background-color: #f8f3f2;
 }
 
 .card4 {
-    background-color: #FFE6EE;
+  background-color: #ffe6ee;
 }
 
 .card5 {
-    background-color: #FFF0E6;
+  background-color: #fff0e6;
 }
-@media screen and (max-width:424px) {
-    .drinks-section  {
-          padding: 0px 20px;
-    }
+@media screen and (max-width: 424px) {
+  .drinks-section {
+    padding: 0px 20px;
+  }
 }
 
 @media screen and (max-width: 475px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-    }
-    .card img {
-        height: 60px;
-    }
-    .card p {
-        font-size: 18px;
-    }
-    
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  .card img {
+    height: 60px;
+  }
+  .card p {
+    font-size: 18px;
+  }
 }
 .brands-section {
-    padding: 60px;
+  padding: 60px;
 }
 .brands-section h2 {
-    text-align: center;
-    font-size: 38px;
-    border-top: 1px solid #0000001e;
-    
+  text-align: center;
+  font-size: 38px;
+  border-top: 1px solid #0000001e;
 }
 .brands-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    border-bottom:1px solid #0000001e;
-    padding-bottom: 50px;
-    overflow-x: scroll;
-     scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  border-bottom: 1px solid #0000001e;
+  padding-bottom: 50px;
+  overflow-x: scroll;
+  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 @media screen and (max-width: 500px) {
@@ -402,25 +396,21 @@ margin-top: 20px;
     gap: 2rem;
     justify-content: start;
   }
-    
 }
 .brands-logo::-webkit-scrollbar {
   display: none;
 }
 .brands-logo img {
-    height: 70px;
-    width: 70px;
-    object-fit: contain;
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
 }
-
-
-
 
 .container {
   /* max-width: 1200px; */
   margin: auto;
   padding: 60px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #333;
 }
 
@@ -435,7 +425,6 @@ margin-top: 20px;
 .explore-card-heading h2 {
   font-size: 2rem;
 }
-
 
 .explore-btn {
   padding: 10px 20px;
@@ -455,12 +444,14 @@ margin-top: 20px;
 .drink-card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  width: calc(25% - 15px);
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
+  width: calc(24% - 15px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   min-width: 250px;
+  border: 1px solid #ddd;
+
 }
 
 .card-image {
@@ -481,18 +472,16 @@ margin-top: 20px;
   pointer-events: none;
 }
 
-.card-image1{
-    width: 100%;
-     display: flex;
-   align-items: center;
-   justify-content: center;
-    
+.card-image1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-image1 img {
-  
-width: 190px;
-height: 190px;
-margin-top: 60px;
+  width: 190px;
+  height: 190px;
+  margin-top: 60px;
 }
 
 .badge.trending {
@@ -508,11 +497,11 @@ margin-top: 60px;
 }
 
 .rank {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   background: white;
   color: black;
   font-weight: bold;
@@ -525,7 +514,7 @@ margin-top: 60px;
   right: 10px;
 }
 .rank img {
-    width: 40px;
+  width: 40px;
 }
 
 .card-body {
@@ -550,13 +539,12 @@ margin-top: 60px;
   padding-bottom: 15px;
 }
 .star {
-    color: #FF8533; 
+  color: #ff8533;
 }
 .drink-rating {
-    color: #000 !important;
-    font-weight: bold;
+  color: #000 !important;
+  font-weight: bold;
 }
-
 
 .rating span {
   color: #aaa;
@@ -564,30 +552,56 @@ margin-top: 60px;
 
 .bar-group {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0px;
 }
 
 .bar-label {
-  font-size: 0.75rem;
-  margin-bottom: 2px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  width: 50px;
+  font-weight: bold;
 }
 
 .bar {
   background: #eee;
-  height: 6px;
+  height: 0.45rem;
   border-radius: 4px;
-  margin-bottom: 10px;
   overflow: hidden;
+  flex: 1;
 }
 
 .fill {
   height: 100%;
-  background: #d9a0ff;
+  /* background: #d9a0ff; */
+  background: linear-gradient(#fbc2eb, #a18cd1);
   border-radius: 4px;
 }
 
-.taste { width: 85%; }
-.health { width: 75%; background: #a0d9ff; }
-.value { width: 65%; background: #ffa0a0; }
+.taste {
+  width: 85%;
+}
+
+.health {
+  width: 92%;
+  /* background: #a0d9ff; */
+  background: linear-gradient(360deg, #a3bded, #6991c7);
+}
+
+.value {
+  width: 85%;
+  /* background: #ffa0a0; */
+  background: linear-gradient(90deg, #fccb90, #d57eeb);
+}
 
 .price-add {
   display: flex;
@@ -599,13 +613,22 @@ margin-top: 60px;
   font-weight: bold;
   font-size: 1.1rem;
 }
-
+.add-btn img {
+  width: 15px;
+  height: 15px;
+}
 .add-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   background: #ff5722;
+  background: var(--primary-gradient);
   color: white;
   padding: 8px 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 0.9rem;
 }
