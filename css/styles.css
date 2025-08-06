@@ -6,12 +6,14 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
+}
+.background-grid {
+ background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
   min-height: 100vh;
   /* overflow: hidden; */
   position: relative;
 }
-body::before {
+.background-grid::before {
   content: "";
   position: absolute;
   top: 320px;
@@ -24,7 +26,7 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
-body::after {
+.background-grid::after {
   content: "";
   position: absolute;
   bottom: 0;
