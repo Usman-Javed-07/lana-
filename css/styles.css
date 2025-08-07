@@ -191,6 +191,9 @@ nav a:hover {
     justify-content: center;
     align-items: center;
   }
+  .navbar a {
+    font-size: 12px;
+  }
 }
 main {
   max-width: 1600px;
@@ -1305,6 +1308,10 @@ main {
   }
   .story-card {
     border-radius: 5px;
+  }
+  .story-modal-content img  {
+    border-radius: 0px;
+    height: 100vh;
   }
 }
 
