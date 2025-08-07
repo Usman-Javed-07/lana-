@@ -884,7 +884,7 @@ nav a:hover {
   /* padding: 30px; */
   text-align: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
   margin-bottom: 30px;
 }
 
@@ -1101,5 +1101,125 @@ nav a:hover {
     height: 250px;
     flex: unset;
     min-width: 150px; 
+  }
+}
+
+
+
+
+/*  */
+
+
+.footer {
+  padding: 20px 30px;
+  background-color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1 1 250px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: auto;
+  position: relative;
+  top: 0px;
+}
+
+.footer-logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.footer-logo p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px 30px;
+  flex: 2 1 400px;
+  align-items: start;
+  
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-links i {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.badge {
+  background-color: #eaf8ee;
+  color: #00c14d;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons a {
+  color: #181D27;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #F5F5F5;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
 }
