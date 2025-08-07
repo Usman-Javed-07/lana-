@@ -973,11 +973,12 @@ nav a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.852);
   border-radius: 50%;
-  padding: 10px 14px;
+  padding: 10px 15px;
   pointer-events: none;
+  color: #FF6700;
 }
 
 .story-info {
