@@ -109,16 +109,12 @@ storyModal.addEventListener("click", (e) => {
     closeStory();
   }
 });
-// Select the "Stories →" button
-const storyBtn = document.querySelector(".explore-btn.story");
 
-// When clicked, show the first story (index 0)
+const storyBtn = document.querySelector(".explore-btn.story");
 storyBtn.addEventListener("click", () => {
-  showStory(0); // opens the first story in the list
+  showStory(0);
 });
 
-
-// Drink card data
 const drinks = [
   {
     img: "./images/image.png",
@@ -253,7 +249,7 @@ const drinks = [
 const cardGrid = document.getElementById("cardGrid");
 const exploreBtn = document.querySelector(".explore-btn");
 
-let showingAll = false; // track toggle state
+let showingAll = false;
 
 function renderDrinks(limit = 4) {
   cardGrid.innerHTML = drinks
@@ -291,15 +287,21 @@ function renderDrinks(limit = 4) {
             <div class="bar-group">
                 <div class="bar-row">
                     <div class="bar-label">Taste</div>
-                    <div class="bar"><div class="fill ${drink.taste}"></div></div>
+                    <div class="bar"><div class="fill ${
+                      drink.taste
+                    }"></div></div>
                 </div>
                 <div class="bar-row">
                     <div class="bar-label">Health</div>
-                    <div class="bar"><div class="fill ${drink.health}"></div></div>
+                    <div class="bar"><div class="fill ${
+                      drink.health
+                    }"></div></div>
                 </div>
                 <div class="bar-row">
                     <div class="bar-label">Value</div>
-                    <div class="bar"><div class="fill ${drink.value}"></div></div>
+                    <div class="bar"><div class="fill ${
+                      drink.value
+                    }"></div></div>
                 </div>
             </div>
             <div class="price-add">
@@ -313,11 +315,8 @@ function renderDrinks(limit = 4) {
     )
     .join("");
 }
-
-// Initial render (4 drinks)
 renderDrinks(4);
 
-// Button click event
 exploreBtn.addEventListener("click", () => {
   if (showingAll) {
     renderDrinks(4);
@@ -328,7 +327,6 @@ exploreBtn.addEventListener("click", () => {
   }
   showingAll = !showingAll;
 });
-
 
 // event card section
 
@@ -437,7 +435,7 @@ const events = [
     price: "From US$57.09",
     aos: "fade-left",
   },
-  // 
+  //
   {
     img: "./images/image 7-1.png",
     friends: [
@@ -547,7 +545,7 @@ const events = [
 const eventGrid = document.getElementById("eventGrid");
 const exploreEventsBtn = document.querySelector(".explore-btn-events");
 
-let showingAllEvents = false; // toggle state
+let showingAllEvents = false;
 
 function renderEventCards() {
   const visibleEvents = showingAllEvents ? events : events.slice(0, 4);
@@ -570,7 +568,9 @@ function renderEventCards() {
                 .map(
                   (tag) => `
                   <span class="event-tag ${tag.class}">
-                      ${tag.icon ? `<img src="${tag.icon}" alt="">` : ""} ${tag.text}
+                      ${tag.icon ? `<img src="${tag.icon}" alt="">` : ""} ${
+                    tag.text
+                  }
                   </span>
               `
                 )
@@ -578,29 +578,28 @@ function renderEventCards() {
           </div>
           <h3>${event.title}</h3>
           <div class="event-card-info"> 
-              <img class="event-time" src="${event.dateIcon}" alt="calendar">${event.dateText}
+              <img class="event-time" src="${event.dateIcon}" alt="calendar">${
+        event.dateText
+      }
           </div>
           <div class="event-card-info"> 
-              <img class="event-location" src="${event.locationIcon}" alt="map">${event.locationText}
+              <img class="event-location" src="${
+                event.locationIcon
+              }" alt="map">${event.locationText}
           </div>
           <p class="event-price"><strong>${event.price}</strong></p>
       </div>
     `
     )
     .join("");
-
-  // Change button text depending on state
   exploreEventsBtn.innerHTML = showingAllEvents
-    ? 'Show Less ↑'
-    : 'Explore All <strong>Events</strong> →';
+    ? "Show Less ↑"
+    : "Explore All <strong>Events</strong> →";
 }
 
-// Toggle button click
 exploreEventsBtn.addEventListener("click", () => {
   showingAllEvents = !showingAllEvents;
   renderEventCards();
 });
 
-// Initial render with 4 cards
 renderEventCards();
-
