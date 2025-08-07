@@ -6,6 +6,7 @@
 }
 :root {
   --primary-gradient: linear-gradient(90deg, #f49062, #fd371f);
+  --secondary-color: #181D27;
 }
 
 body {
@@ -94,7 +95,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  color: #181D27;
+  color: var(--secondary-color);
   transition: color 0.3s ease;
 }
 
@@ -463,7 +464,7 @@ z-index: 9999;
   background: white;
   cursor: pointer;
   font-weight: 500;
-  color: #181D27;
+  color: var(--secondary-color);
   font-size: 18px; 
 transition: color 0.3s ease;
 }
@@ -600,13 +601,13 @@ transition: color 0.3s ease;
 
 .card-body h3 {
   font-size: 20px;
-  color: #181D27;
+  color: var(--secondary-color);
   margin-bottom: 5px;
 }
 
 .rating {
   font-size: 0.9rem;
-  color: #181D27;
+  color: var(--secondary-color);
   margin-bottom: 10px;
   margin-top: 0px;
   border-bottom: 1px solid #0000001e;
@@ -704,7 +705,7 @@ transition: color 0.3s ease;
   border-radius: 10px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 .add-btn:hover {
   background: linear-gradient(90deg, #f49062ca, #fd351fd0);;
@@ -852,7 +853,7 @@ transition: color 0.3s ease;
   margin-top: 20px;
   border-bottom: 1px solid #0000001e;
   padding-bottom: 20px;
-  color: #181D27;
+  color: var(--secondary-color);
 }
 .event-card-info {
     display: flex;
@@ -860,7 +861,7 @@ transition: color 0.3s ease;
     align-items: center;
     gap: 10px;
     padding-bottom: 10px;
-    color: #181D27;
+    color: var(--secondary-color);
 }
 .event-card-info img {
     width: 18px;
@@ -876,7 +877,7 @@ transition: color 0.3s ease;
 .event-location,
 .event-price {
   font-size: 20px;
-  color: #181D27;
+  color: var(--secondary-color);
   margin-bottom: 4px;
 }
 .event-price {
@@ -957,7 +958,7 @@ transition: color 0.3s ease;
 }
 .subheading {
   font-size: 20px;
-  color: #181D27;
+  color: var(--secondary-color);
   margin-top: 0px;
   text-align: start;
   margin-bottom: 50px;
@@ -1236,7 +1237,7 @@ transition: color 0.3s ease;
 
 .footer-links a {
   text-decoration: none;
-  color: #181D27;
+  color: var(--secondary-color);
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -1273,7 +1274,7 @@ transition: color 0.3s ease;
   color: #555;
 }
 .footer-bottom p {
-  color: #181D27;
+ color: var(--secondary-color);
   font-size: 16px;
 }
 
@@ -1283,7 +1284,7 @@ transition: color 0.3s ease;
 }
 
 .footer-icons a {
-  color: #181D27;
+  color: var(--secondary-color);
   font-size: 22px;
   text-decoration: none;
   background-color: #F5F5F5;
