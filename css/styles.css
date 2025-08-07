@@ -1,3 +1,9 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --primary-gradient: linear-gradient(90deg, #f49062, #fd371f);
 }
@@ -307,6 +313,10 @@ z-index: 9999;
 .drinks-links-list a {
   text-decoration: none;
   color: #000000b6;
+   transition: color 0.3s ease;
+}
+.drinks-links-list a:hover {
+  color: #ffc0cb;
 }
 .active-link {
   padding: 11px 30px;
@@ -333,12 +343,16 @@ z-index: 9999;
   background-color: #fff0e6;
   border-radius: 10px;
   padding: 10px 50px 0px 20px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 .card p {
   font-size: 20px;
 }
 .card img {
-  height: 110px;
+  height: 100px;
 }
 .card1 {
   background-color: #f4f8fe;
@@ -471,6 +485,10 @@ z-index: 9999;
   overflow: hidden;
   min-width: 250px;
   border: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+  .drink-card:hover {
+  transform: translateY(-15px);
 }
 @media screen and (max-width: 1000px) {
   .drink-card {
@@ -740,7 +758,7 @@ z-index: 9999;
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
 }
 
 .event-card--image::after {
@@ -933,7 +951,7 @@ z-index: 9999;
 .subheading {
   font-size: 20px;
   color: #181D27;
-  margin-top: -20px;
+  margin-top: 0px;
   text-align: start;
   margin-bottom: 50px;
   padding: 0px 60px 0px 60px;
@@ -971,10 +989,37 @@ z-index: 9999;
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
-  scroll-snap-align: start;  /* Optional: snap card to start */
+  scroll-snap-align: start;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d; /* Optional: snap card to start */
 }
 
+.story-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  transition: transform 0.75s ease;
+}
 
+.story-card:hover::before {
+  transform: translateX(100%) rotate(25deg);
+}
+
+.story-card:hover {
+  transform: rotateY(5deg) rotateX(5deg) scale(1.04);
+  
+}
 
 /* Optional: Hide scrollbar for clean UI */
 .story-grid::-webkit-scrollbar {
