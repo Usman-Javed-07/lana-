@@ -1331,6 +1331,7 @@ main {
   justify-content: space-between;
   gap: 40px;
   border-bottom: 1px solid #0000001e;
+  padding: 40px 0px;
 }
 
 .footer-logo {
@@ -1470,5 +1471,8 @@ main {
   }
 .footer-bottom p {
   font-size: 12px;
+}
+.footer-top {
+  padding: 0px 0px;
 }
 }
