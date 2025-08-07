@@ -771,7 +771,7 @@ main {
   gap: 5px;
   background: var(--primary-gradient);
   color: white;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
