@@ -109,6 +109,14 @@ storyModal.addEventListener("click", (e) => {
     closeStory();
   }
 });
+// Select the "Stories →" button
+const storyBtn = document.querySelector(".explore-btn.story");
+
+// When clicked, show the first story (index 0)
+storyBtn.addEventListener("click", () => {
+  showStory(0); // opens the first story in the list
+});
+
 
 // Drink card data
 const drinks = [
