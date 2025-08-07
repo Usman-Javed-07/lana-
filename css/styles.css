@@ -1059,3 +1059,52 @@ nav a:hover {
   cursor: pointer;
   z-index: 1000;
 }
+
+@media screen and (max-width: 1024px) {
+   .story-section {
+    padding: 20px;
+  }
+  .story-grid {
+    gap: 5px;
+  }
+  .story-card {
+    width: 450px !important;
+    height: 350px;
+    flex: unset;
+    min-width: 260px; 
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .subheading {
+    margin-top: 10px;
+  }
+   .story-section {
+    padding: 5px;
+  }
+  .story-grid {
+    gap: 5px;
+  }
+  .story-card {
+    width: 450px !important;
+    height: 300px;
+    flex: unset;
+    min-width: 200px; 
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .story-section {
+    padding: 5px;
+  }
+  .story-grid {
+    gap: 5px;
+  }
+  .story-card {
+    width: 200px !important;
+    height: 250px;
+    flex: unset;
+    min-width: 150px; 
+  }
+}
