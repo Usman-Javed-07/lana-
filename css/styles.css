@@ -915,22 +915,52 @@ nav a:hover {
   padding: 0px 30px 0px 30px;
 }
 
-.story-grid {
+/*  */
 
+
+.story-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;         /* No wrap - horizontal only */
   gap: 20px;
+  overflow-x: auto;          /* Enable scroll on X */
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
 }
 
+.story-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  pointer-events: none;
+  z-index: 10;
+}
 .story-card {
   position: relative;
   width: 250px;
-  height: 400px;
+  height: 450px;
+  min-width: 300px;          /* Prevent shrinking */
+  flex: 0 0 auto;            /* Fixed width in flex row */
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
+  scroll-snap-align: start;  /* Optional: snap card to start */
 }
+
+
+
+/* Optional: Hide scrollbar for clean UI */
+.story-grid::-webkit-scrollbar {
+  display: none;
+}
+.story-grid {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 
 .story-card img {
   width: 100%;
@@ -956,15 +986,19 @@ nav a:hover {
   left: 10px;
   color: #fff;
   text-align: left;
+  z-index: 21;
 }
 
 .story-name {
   font-weight: bold;
   font-size: 14px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .story-role {
   font-size: 12px;
+  margin-top: 5px;
 }
 
 /* Story Modal */
@@ -975,7 +1009,7 @@ nav a:hover {
   background-color: rgba(0,0,0,0.9);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .story-modal-content {
@@ -986,6 +1020,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 999;
 }
 
 .story-modal-content img {
@@ -993,6 +1028,7 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  
 }
 
 .story-progress {
@@ -1021,18 +1057,4 @@ nav a:hover {
   align-items: center;
   cursor: pointer;
   z-index: 1000;
-}
-
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .story-card {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .story-card {
-    width: 100%;
-  }
 }

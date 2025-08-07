@@ -19,6 +19,7 @@ let stories = [
   './images/st-2.png',
   './images/st-3.png',
   './images/st-4.png',
+  './images/st-2.png',
 ];
 
 let currentStoryIndex = 0;
