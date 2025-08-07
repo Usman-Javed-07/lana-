@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Inter',sans-serif;
 }
 .background-grid {
   background: linear-gradient(to bottom, #f2f5f9e7, #fdeeea);
@@ -87,8 +87,8 @@ body {
 .navbar a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
-  color: #000;
+  font-size: 18px;
+  color: #181D27;
   transition: color 0.3s ease;
 }
 
@@ -122,7 +122,7 @@ nav a:hover {
 .bring-price {
   font-size: 12px;
   margin-left: 5px;
-  background-color: rgba(6, 136, 51, 0.735);
+  background-color: #1FC16B;
   color: #fff;
   padding: 5px 12px;
   border-radius: 50px;
@@ -186,7 +186,11 @@ nav a:hover {
 .main-heading {
   text-align: center;
   margin-top: 4rem;
-  font-size: 48px;
+  font-size: 56px;
+  font-weight: 500;
+text-shadow: 3px 2px 3px rgba(9, 8, 8, 0.215);
+position: relative;
+z-index: 9999;
 }
 .highlight-text {
   color: #ff6a4d;
@@ -230,7 +234,7 @@ nav a:hover {
 }
 .drinks-section {
   margin-top: 1.5rem;
-  padding: 0px 60px;
+  padding: 40px 60px;
 }
 .drinks-container {
   background-color: #fff;
@@ -281,8 +285,9 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
   gap: 20px;
-  color: #666;
+  color: #717680;
 }
 .drinks-heading img {
   height: 30px;
@@ -296,6 +301,8 @@ nav a:hover {
   gap: 20px;
   align-items: center;
   padding-right: 30px;
+  color: #717680;
+  font-size: 14px;
 }
 .drinks-links-list a {
   text-decoration: none;
@@ -354,7 +361,7 @@ nav a:hover {
 }
 @media screen and (max-width: 424px) {
   .drinks-section {
-    padding: 0px 20px;
+    padding: 20px 20px;
   }
 }
 
@@ -372,19 +379,27 @@ nav a:hover {
     font-size: 18px;
   }
 }
+
 .brands-section {
-  padding: 60px 60px 30px 60px;
+  padding: 30px 60px 30px 60px;
 }
 .brands-section h2 {
   text-align: center;
-  font-size: 38px;
   border-top: 1px solid #0000001e;
+  font-weight: 500;
+  color: #000;
+  font-size: 48px;
+}
+.highlight-font {
+   font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 100;
 }
 .brands-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 12rem;
   border-bottom: 1px solid #0000001e;
   padding-bottom: 50px;
   overflow-x: scroll;
@@ -406,11 +421,11 @@ nav a:hover {
   object-fit: contain;
 }
 
+
 .container {
   /* max-width: 1200px; */
   margin: auto;
   padding: 0px 60px 60px 60px;
-  font-family: "Inter", sans-serif;
   color: #333;
 }
 
@@ -421,9 +436,10 @@ nav a:hover {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
 .explore-card-heading h2 {
-  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  font-size: 48px;
 }
 
 .explore-btn {
@@ -433,6 +449,8 @@ nav a:hover {
   background: white;
   cursor: pointer;
   font-weight: 500;
+  color: #181D27;
+  font-size: 18px;
 }
 
 .card-grid {
@@ -568,7 +586,7 @@ nav a:hover {
   color: #666;
   margin-bottom: 10px;
   margin-top: 0px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #0000001e;
   padding-bottom: 15px;
 }
 .star {
@@ -589,7 +607,7 @@ nav a:hover {
   flex-direction: column;
   gap: 6px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #0000001e;
 }
 
 .bar-row {
@@ -768,7 +786,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ddd;
+  border: 1px solid #0000001e;
 
 }
 
@@ -806,7 +824,7 @@ nav a:hover {
   font-size: 1.15rem;
   margin: 8px 0;
   margin-top: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #0000001e;
   padding-bottom: 20px;
 }
 .event-card-info {
@@ -884,7 +902,7 @@ nav a:hover {
   /* padding: 30px; */
   text-align: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #0000001e;
   margin-bottom: 30px;
 }
 
@@ -893,9 +911,9 @@ nav a:hover {
   margin-bottom: 8px;
 }
 .story img {
-  width: 18px;
+  width: 22px;
   position: relative;
-  top: 5px;
+  top: 4px;
 }
 
 .bold {
@@ -1121,7 +1139,7 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #0000001e;
 }
 
 .footer-logo {
