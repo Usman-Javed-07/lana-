@@ -7,6 +7,7 @@
 :root {
   --primary-gradient: linear-gradient(90deg, #f49062, #fd371f);
   --secondary-color: #181D27;
+  --hover-color:#ffc0cb;
 }
 
 body {
@@ -124,7 +125,7 @@ body {
   cursor: pointer;
 }
 nav a:hover {
-  color: #ffc0cb;
+  color: var(--hover-color);
 }
 .bring-price {
   font-size: 12px;
@@ -317,7 +318,7 @@ z-index: 9999;
    transition: color 0.3s ease;
 }
 .drinks-links-list a:hover {
-  color: #ffc0cb;
+  color: var(--hover-color);
 }
 .active-link {
   padding: 11px 30px;
@@ -469,7 +470,7 @@ z-index: 9999;
 transition: color 0.3s ease;
 }
 .explore-btn:hover {
-  color: #ffc0cb;;
+  color: var(--hover-color);
 }
 
 .card-grid {
@@ -1247,7 +1248,7 @@ transition: color 0.3s ease;
   
 
 .footer-links a:hover {
-  color: #ffc0cb;
+  color: var(--hover-color);
 }
 
 .footer-links i {
@@ -1295,7 +1296,7 @@ transition: color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .footer-icons a:hover {
-  background-color: #ffc0cb;
+  color: var(--hover-color);
 }
 
 
