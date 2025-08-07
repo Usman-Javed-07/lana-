@@ -697,7 +697,6 @@ transition: color 0.3s ease;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  background: #ff5722;
   background: var(--primary-gradient);
   color: white;
   padding: 8px 15px;
@@ -705,6 +704,10 @@ transition: color 0.3s ease;
   border-radius: 10px;
   cursor: pointer;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.add-btn:hover {
+  background: linear-gradient(90deg, #f49062ca, #fd351fd0);;
 }
 
 @media (max-width: 992px) {
@@ -1287,7 +1290,13 @@ transition: color 0.3s ease;
   padding: 10px 12px;
   border-radius: 50%;
   font-size: 16px;
+
+  transition: background-color 0.3s ease;
 }
+.footer-icons a:hover {
+  background-color: #ffc0cb;
+}
+
 
 @media (max-width: 600px) {
   .footer-top {
