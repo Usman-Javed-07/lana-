@@ -464,7 +464,11 @@ z-index: 9999;
   cursor: pointer;
   font-weight: 500;
   color: #181D27;
-  font-size: 18px;
+  font-size: 18px; 
+transition: color 0.3s ease;
+}
+.explore-btn:hover {
+  color: #ffc0cb;;
 }
 
 .card-grid {
@@ -1234,6 +1238,12 @@ z-index: 9999;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: color 0.3s ease;
+}
+  
+
+.footer-links a:hover {
+  color: #ffc0cb;
 }
 
 .footer-links i {
