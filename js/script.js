@@ -603,3 +603,24 @@ exploreEventsBtn.addEventListener("click", () => {
 });
 
 renderEventCards();
+
+const drinksBtn = document.getElementById('drinksBtn');
+const experiencesBtn = document.getElementById('experiencesBtn');
+const drinksContent = document.getElementById('drinksContent');
+const experiencesContent = document.getElementById('experiencesContent');
+
+drinksBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  drinksBtn.classList.add('active-link');
+  experiencesBtn.classList.remove('active-link');
+  drinksContent.style.display = 'flex';
+  experiencesContent.style.display = 'none';
+});
+
+experiencesBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  experiencesBtn.classList.add('active-link');
+  drinksBtn.classList.remove('active-link');
+  drinksContent.style.display = 'none';
+  experiencesContent.style.display = 'flex';
+});
