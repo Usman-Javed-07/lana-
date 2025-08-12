@@ -148,7 +148,7 @@ nav a:hover {
   justify-content: center;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
   .menu-toggle {
     display: block;
   }
@@ -426,7 +426,7 @@ main {
 }
 @media screen and (max-width: 426px) {
   .drinks-section {
-    padding: 10px 10px;
+    padding: 30px 10px;
   }
   .drinks-heading {
     font-size: 14px;
@@ -444,7 +444,7 @@ main {
   .drinks-container {
     border-radius: 10px;
     position: relative;
-    top: -20px;
+    top: 20px;
   }
   .input {
     padding: 12px 15px;
@@ -1306,14 +1306,14 @@ main {
   justify-content: space-between;
   gap: 40px;
   border-bottom: 1px solid #0000001e;
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 15px;
-  flex: 1 1 250px;
+  flex: 1 1 10px;
 }
 
 .footer-logo img {
@@ -1339,7 +1339,7 @@ main {
 .footer-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px 30px;
+  gap: 20px 100px;
   flex: 2 1 400px;
   align-items: start;
 }
@@ -1407,6 +1407,9 @@ main {
 }
 
 @media (max-width: 600px) {
+  .footer {
+    margin-top: 50px;
+  }
   .footer-top {
     flex-direction: column;
     gap: 20px;
@@ -1438,7 +1441,7 @@ main {
   }
   .footer-links {
     position: relative;
-    top: -40px;
+    top: 10px;
     flex: 2 1 300px;
   }
   .footer-links a {
